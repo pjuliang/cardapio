@@ -1,0 +1,110 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif:wght@400&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    background-color: hsl(330, 100%, 98%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: hsl(14, 45%, 36%);
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+/* Main Menu Styles */
+.menu {
+    padding: 1rem;
+}
+
+/* Menu Container Styles */
+.menu-container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Reduced max-width for a narrower menu */
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the menu container */
+}
+.main-image-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-section {
+    margin-bottom: 2rem;
+}
+
+.menu-section h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: hsl(332, 51%, 32%);
+    border-bottom: 2px solid hsl(332, 51%, 32%);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.menu-item-text {
+    max-width: 80%;
+}
+
+.menu-item h3 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: hsl(30, 10%, 34%);
+    margin: 0;
+}
+
+.menu-item p {
+    margin: 0;
+    color: hsl(332, 51%, 32%);
+}
+
+.menu-item .price {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item .price {
+        margin-top: 0.5rem;
+    }
+}
